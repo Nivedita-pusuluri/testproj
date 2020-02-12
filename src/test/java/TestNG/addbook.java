@@ -14,10 +14,10 @@ public class addbook {
 	@BeforeMethod
 	public void launch() {
 		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-		  driver = new ChromeDriver();
-		  driver.get("http://52.66.244.143:32768/addressbook/");
+		 driver = new ChromeDriver();
+		  driver.get("http://18.204.219.32:32770/addressbook/");
 		  driver.manage().window().maximize();
-		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		  driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 	}
   @Test
   public void verifyaddbook() {
