@@ -19,6 +19,7 @@ public class addbook {
 		driver.get("http://18.204.219.32:32770/addressbook/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		System.out.println("Done");
 	}
 
 	@Test
